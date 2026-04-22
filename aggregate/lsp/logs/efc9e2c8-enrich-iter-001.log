@@ -1,0 +1,15 @@
+[2026-04-22T05:52:17Z] === ENRICH ITERATION 1 START | repo=apple/pkl sha=efc9e2c8 ===
+[2026-04-22T05:52:17Z] [iter=1] PHASE START: enrich repo=apple/pkl sha=efc9e2c8 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/efc9e2c8-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/efc9e2c819febd1c28c5626656cfcec3ab86de36.nq.gz
+[2026-04-22T05:52:17Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=77 MB
+[2026-04-22T05:53:10Z] [iter=1] AST store loaded triples=5470238 load_secs=51 mem_mb=999 MB
+[2026-04-22T05:53:10Z] [iter=1] Step 2: Finding LSP targets mem_mb=999 MB
+[2026-04-22T05:53:37Z] [iter=1] LSP targets found call_sites=51850 imports=7939 extends=1759 implements=0 secs=27
+[2026-04-22T05:54:01Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=999 MB
+[2026-04-22T05:54:38Z] [iter=1] Position index built positions=347351 nodes_with_types=445069 secs=37 mem_mb=1207 MB
+[2026-04-22T05:54:38Z] [iter=1] Step 3: Starting LSP resolution mem_mb=1207 MB already_completed_types=[] already_completed_files=0
+[2026-04-22T05:54:38Z] [iter=1] Resolving target type target_type=call_site count=51850
+[2026-04-22T05:54:49Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=2.5 files_done=0 resolved=0 errors=0 current=pkl-core/src/main/java/org/pkl/core/ast/expression/unary/AbstractReadNode.java
+[2026-04-22T05:54:57Z] [iter=1] CHECKPOINT TRIGGERED elapsed_min=2.7 files_completed=500 new_files_this_iter=500 mem_mb=1255 MB
+[2026-04-22T05:54:57Z] [iter=1] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/efc9e2c819febd1c28c5626656cfcec3ab86de36.nq.gz triples=57913
+[2026-04-22T05:54:58Z] [iter=1] Checkpoint written, exiting with code 7
+[2026-04-22T05:54:58Z] [iter=1] PHASE END: enrich (checkpointed) elapsed_s=160 elapsed_min=2.7 files_completed=500
