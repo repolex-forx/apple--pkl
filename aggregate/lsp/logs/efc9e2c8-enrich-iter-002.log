@@ -1,0 +1,75 @@
+[2026-04-22T05:59:25Z] === ENRICH ITERATION 2 START | repo=apple/pkl sha=efc9e2c8 ===
+[2026-04-22T05:59:25Z] [iter=2] PHASE START: enrich repo=apple/pkl sha=efc9e2c8 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/efc9e2c8-enrich-iter-002.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/efc9e2c819febd1c28c5626656cfcec3ab86de36.nq.gz
+[2026-04-22T05:59:25Z] [iter=2] Step 1: Loading AST into disk-backed store mem_mb=77 MB
+[2026-04-22T06:00:18Z] [iter=2] AST store loaded triples=5470238 load_secs=51 mem_mb=952 MB
+[2026-04-22T06:00:18Z] [iter=2] Step 2: Finding LSP targets mem_mb=952 MB
+[2026-04-22T06:00:44Z] [iter=2] LSP targets found call_sites=51850 imports=7939 extends=1759 implements=0 secs=26
+[2026-04-22T06:00:47Z] [iter=2] Loaded checkpoint partial graph triples=57913
+[2026-04-22T06:01:12Z] [iter=2] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=952 MB
+[2026-04-22T06:01:44Z] [iter=2] Position index built positions=347351 nodes_with_types=445069 secs=32 mem_mb=1185 MB
+[2026-04-22T06:01:44Z] [iter=2] Step 3: Starting LSP resolution mem_mb=1185 MB already_completed_types=[] already_completed_files=500
+[2026-04-22T06:01:44Z] [iter=2] Resolving target type target_type=call_site count=51850
+[2026-04-22T06:01:56Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=2.5 files_done=0 resolved=0 errors=0 current=pkl-core/src/main/java/org/pkl/core/ast/type/TypeCastNode.java
+[2026-04-22T06:03:20Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=3.9 files_done=75 resolved=0 errors=26 current=pkl-core/pkl-core.gradle.kts
+[2026-04-22T06:20:25Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=21.0 files_done=77 resolved=49 errors=476 current=pkl-doc/src/test/kotlin/org/pkl/doc/SearchTest.kt
+[2026-04-22T06:22:47Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=23.4 files_done=78 resolved=53 errors=538 current=pkl-formatter/src/main/kotlin/org/pkl/formatter/Builder.kt
+[2026-04-22T06:48:50Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=49.4 files_done=79 resolved=185 errors=1222 current=pkl-core/src/test/kotlin/org/pkl/core/LanguageSnippetTestsEngine.kt
+[2026-04-22T06:52:05Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=52.7 files_done=80 resolved=186 errors=1307 current=buildSrc/src/main/kotlin/ExecutableJar.kt
+[2026-04-22T07:00:10Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=60.8 files_done=82 resolved=186 errors=1517 current=pkl-core/src/test/kotlin/org/pkl/core/ReplServerTest.kt
+[2026-04-22T07:01:56Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=62.5 files_done=83 resolved=186 errors=1563 current=pkl-core/src/test/kotlin/org/pkl/core/runtime/VmUtilsTest.kt
+[2026-04-22T07:03:38Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=64.2 files_done=84 resolved=186 errors=1607 current=pkl-gradle/src/test/kotlin/org/pkl/gradle/EvaluatorsTest.kt
+[2026-04-22T07:08:43Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=69.3 files_done=85 resolved=187 errors=1740 current=pkl-config-kotlin/src/test/kotlin/org/pkl/config/kotlin/mapper/KotlinConversionsTest.kt
+[2026-04-22T07:09:17Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=69.9 files_done=86 resolved=187 errors=1755 current=pkl-core/src/test/kotlin/org/pkl/core/http/NoProxyRuleTest.kt
+[2026-04-22T07:12:44Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=73.3 files_done=87 resolved=187 errors=1845 current=pkl-core/src/test/kotlin/org/pkl/core/http/HttpClientTest.kt
+[2026-04-22T07:14:06Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=74.7 files_done=88 resolved=187 errors=1881 current=buildSrc/src/main/kotlin/pklNativeLifecycle.gradle.kts
+[2026-04-22T07:16:25Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=77.0 files_done=90 resolved=206 errors=1942 current=pkl-doc/src/test/kotlin/org/pkl/doc/DocGeneratorTestHelper.kt
+[2026-04-22T07:18:31Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=79.1 files_done=91 resolved=213 errors=1997 current=pkl-codegen-kotlin/src/test/kotlin/org/pkl/codegen/kotlin/KotlinCodeGeneratorTest.kt
+[2026-04-22T07:33:23Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=94.0 files_done=92 resolved=244 errors=2388 current=pkl-cli/src/main/kotlin/org/pkl/cli/repl/Repl.kt
+[2026-04-22T07:36:19Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=96.9 files_done=93 resolved=245 errors=2465 current=pkl-core/src/test/kotlin/org/pkl/core/DataSizeTest.kt
+[2026-04-22T07:39:28Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=100.0 files_done=94 resolved=245 errors=2548 current=pkl-cli/src/main/kotlin/org/pkl/cli/CliProjectPackager.kt
+[2026-04-22T07:40:17Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=100.9 files_done=95 resolved=249 errors=2569 current=pkl-codegen-java/src/main/kotlin/org/pkl/codegen/java/JavaCodeGenerator.kt
+[2026-04-22T07:46:47Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=107.4 files_done=96 resolved=258 errors=2740 current=pkl-core/src/test/kotlin/org/pkl/core/project/ProjectDepsTest.kt
+[2026-04-22T07:47:47Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=108.4 files_done=98 resolved=258 errors=2766 current=pkl-core/src/test/kotlin/org/pkl/core/EvaluatorBuilderTest.kt
+[2026-04-22T07:48:33Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=109.1 files_done=99 resolved=258 errors=2786 current=pkl-core/src/test/kotlin/org/pkl/core/runtime/FileSystemManagerTest.kt
+[2026-04-22T07:49:30Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=110.1 files_done=101 resolved=258 errors=2811 current=pkl-core/src/test/kotlin/org/pkl/core/packages/PackageResolversTest.kt
+[2026-04-22T07:51:47Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=112.4 files_done=102 resolved=258 errors=2871 current=pkl-core/src/test/kotlin/org/pkl/core/SecurityManagersTest.kt
+[2026-04-22T07:54:02Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=114.6 files_done=103 resolved=258 errors=2930 current=pkl-core/src/test/kotlin/org/pkl/core/PModuleTest.kt
+[2026-04-22T07:55:10Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=115.8 files_done=104 resolved=258 errors=2960 current=pkl-cli/src/test/kotlin/org/pkl/cli/CliProjectPackagerTest.kt
+[2026-04-22T07:58:41Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=119.3 files_done=105 resolved=323 errors=3052 current=pkl-core/src/test/kotlin/org/pkl/core/VersionTest.kt
+[2026-04-22T08:02:45Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=123.3 files_done=106 resolved=323 errors=3159 current=pkl-doc/src/main/kotlin/org/pkl/doc/ModulePageGenerator.kt
+[2026-04-22T08:05:57Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=126.5 files_done=108 resolved=323 errors=3243 current=pkl-core/src/test/kotlin/org/pkl/core/PObjectTest.kt
+[2026-04-22T08:07:10Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=127.7 files_done=109 resolved=323 errors=3275 current=buildSrc/src/main/kotlin/pklNativeExecutable.gradle.kts
+[2026-04-22T08:09:02Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=129.6 files_done=111 resolved=338 errors=3324 current=pkl-cli/src/test/kotlin/org/pkl/cli/CliCommandRunnerTest.kt
+[2026-04-22T08:12:01Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=132.6 files_done=112 resolved=368 errors=3402 current=pkl-core/src/test/kotlin/org/pkl/core/PClassInfoTest.kt
+[2026-04-22T08:15:49Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=136.4 files_done=114 resolved=388 errors=3502 current=pkl-core/src/test/kotlin/org/pkl/core/util/GlobResolverTest.kt
+[2026-04-22T08:21:12Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=141.8 files_done=115 resolved=388 errors=3643 current=pkl-core/src/test/kotlin/org/pkl/core/EvaluateSchemaTest.kt
+[2026-04-22T08:23:09Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=143.7 files_done=116 resolved=388 errors=3694 current=pkl-cli/src/test/kotlin/org/pkl/cli/CliEvaluatorTest.kt
+[2026-04-22T08:33:06Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=153.7 files_done=117 resolved=525 errors=3956 current=pkl-doc/src/main/kotlin/org/pkl/doc/DocScope.kt
+[2026-04-22T08:38:32Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=159.1 files_done=118 resolved=550 errors=4099 current=pkl-parser/src/test/kotlin/org/pkl/parser/SexpRenderer.kt
+[2026-04-22T09:01:01Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=181.6 files_done=119 resolved=550 errors=4692 current=pkl-core/src/test/kotlin/org/pkl/core/util/IoUtilsTest.kt
+[2026-04-22T09:05:02Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=185.6 files_done=120 resolved=550 errors=4797 current=pkl-doc/src/test/kotlin/org/pkl/doc/DocMigratorTest.kt
+[2026-04-22T09:06:08Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=186.7 files_done=121 resolved=558 errors=4826 current=pkl-core/src/test/kotlin/org/pkl/core/PropertiesRendererTest.kt
+[2026-04-22T09:06:51Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=187.4 files_done=122 resolved=558 errors=4845 current=docs/src/test/kotlin/DocSnippetTests.kt
+[2026-04-22T09:10:58Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=191.5 files_done=123 resolved=559 errors=4954 current=pkl-doc/src/main/kotlin/org/pkl/doc/ModuleOrClassPageGenerator.kt
+[2026-04-22T09:14:15Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=194.8 files_done=125 resolved=568 errors=5040 current=pkl-commons/src/test/kotlin/org/pkl/commons/NameMapperTest.kt
+[2026-04-22T09:20:05Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=200.7 files_done=127 resolved=618 errors=5194 current=pkl-core/src/test/kotlin/org/pkl/core/util/AnsiStringBuilderTest.kt
+[2026-04-22T09:20:51Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=201.4 files_done=128 resolved=618 errors=5214 current=pkl-core/src/test/kotlin/org/pkl/core/runtime/CommandSpecParserTest.kt
+[2026-04-22T09:24:39Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=205.2 files_done=129 resolved=618 errors=5314 current=pkl-core/src/test/kotlin/org/pkl/core/runtime/IteratorsTest.kt
+[2026-04-22T09:25:47Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=206.4 files_done=130 resolved=618 errors=5344 current=pkl-server/pkl-server.gradle.kts
+[2026-04-22T09:27:37Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=208.2 files_done=132 resolved=626 errors=5392 current=pkl-core/src/test/kotlin/org/pkl/core/DurationUnitTest.kt
+[2026-04-22T09:28:18Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=208.9 files_done=133 resolved=626 errors=5410 current=pkl-core/src/test/kotlin/org/pkl/core/parser/TrailingCommasTest.kt
+[2026-04-22T09:29:57Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=210.5 files_done=135 resolved=648 errors=5453 current=buildSrc/src/main/kotlin/BuildInfo.kt
+[2026-04-22T09:32:13Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=212.8 files_done=136 resolved=653 errors=5513 current=pkl-core/src/test/kotlin/org/pkl/core/YamlRendererTest.kt
+[2026-04-22T09:33:37Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=214.2 files_done=137 resolved=653 errors=5550 current=pkl-executor/src/test/kotlin/org/pkl/executor/VersionTest.kt
+[2026-04-22T09:37:41Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=218.3 files_done=138 resolved=653 errors=5657 current=pkl-doc/src/main/kotlin/org/pkl/doc/DocGenerator.kt
+[2026-04-22T09:40:40Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=221.2 files_done=139 resolved=663 errors=5725 current=pkl-server/src/test/kotlin/org/pkl/server/AbstractServerTest.kt
+[2026-04-22T09:47:49Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=228.4 files_done=140 resolved=730 errors=5911 current=pkl-commons/src/test/kotlin/org/pkl/commons/ShlexTest.kt
+[2026-04-22T09:48:21Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=228.9 files_done=141 resolved=730 errors=5925 current=pkl-core/src/test/kotlin/org/pkl/core/settings/PklSettingsTest.kt
+[2026-04-22T09:50:04Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=230.7 files_done=142 resolved=730 errors=5970 current=pkl-doc/src/main/kotlin/org/pkl/doc/PageGenerator.kt
+[2026-04-22T09:53:07Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=233.7 files_done=143 resolved=749 errors=6050 current=pkl-core/src/test/kotlin/org/pkl/core/EvaluateMultipleFileOutputTest.kt
+[2026-04-22T09:56:31Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=237.1 files_done=145 resolved=752 errors=6139 current=pkl-gradle/pkl-gradle.gradle.kts
+[2026-04-22T09:57:28Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=238.0 files_done=147 resolved=753 errors=6164 current=pkl-codegen-kotlin/src/main/kotlin/org/pkl/codegen/kotlin/KotlinCodeGenerator.kt
+[2026-04-22T09:59:34Z] [iter=2] CHECKPOINT TRIGGERED elapsed_min=240.1 files_completed=647 new_files_this_iter=147 mem_mb=1291 MB
+[2026-04-22T09:59:34Z] [iter=2] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/efc9e2c819febd1c28c5626656cfcec3ab86de36.nq.gz triples=94776
+[2026-04-22T09:59:36Z] [iter=2] Checkpoint written, exiting with code 7
+[2026-04-22T09:59:36Z] [iter=2] PHASE END: enrich (checkpointed) elapsed_s=14408 elapsed_min=240.1 files_completed=647
